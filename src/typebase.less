@@ -1,8 +1,24 @@
 /*! Typebase.less v0.1.0 | MIT License */
 
+// Screen Settings
+@screen-xs:                  480px;
+@screen-sm:                  768px;
+@screen-md:                  992px;
+@screen-lg:                  1200px;
+
+@baseFontSize-xs: 10;
+@baseFontSize-sm: 14;
+@baseFontSize-md: 18;
+@baseFontSize-lg: 22;
+
+@scale-xs: 1.414;
+@scale-sm: 1.614;
+@scale-md: 1.814;
+@scale-lg: 2.014;
+
 
 // Typesetting variables. Edit these!
-@baseFontSize: 22; // in pixels. This would result in 22px on desktop
+@baseFontSize: @baseFontSize-lg; // in pixels. This would result in 22px on desktop
 @baseLineHeight: 1.5; // how large the line height is as a multiple of font size
 @leading: @baseLineHeight * 1rem;
 
@@ -24,6 +40,32 @@ html {
   // -ms-text-size-adjust: auto;
   // -o-text-size-adjust: auto;
   // text-size-adjust: auto;
+}
+
+/* GLOBAL HTML MEDIA QUERY SIZES */
+
+@media screen and (max-width: @screen-lg) {
+  html {
+    font-size: @baseFontSize-lg / 16 * 100%;
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  html {
+    font-size: @baseFontSize-md / 16 * 100%;
+  }
+}
+
+@media screen and (max-width: @screen-sm) {
+  html {
+    font-size: @baseFontSize-sm / 16 * 100%;
+  }
+}
+
+@media screen and (max-width: @screen-xs) {
+  html {
+    font-size: @baseFontSize-xs / 16 * 100%;
+  }
 }
 
 /* Copy & Lists */
@@ -62,12 +104,52 @@ h1, h2, h3, h4, h5, h6 {
   line-height: @leading;
 }
 
+/* GLOBAL HTML MEDIA QUERY SIZES */
+
 h1 { font-size: 3 * @scale * 1rem; line-height: 3 * @leading; margin-top: 2 * @leading; }
 h2 { font-size: 2 * @scale * 1rem; line-height: 2 * @leading; margin-top: 2 * @leading; }
 h3 { font-size: 1 * @scale * 1rem; }
 h4 { font-size: @scale / 2 * 1rem; }
 h5 { font-size: @scale / 3 * 1rem; }
 h6 { font-size: @scale / 4 * 1rem; }
+
+@media screen and (max-width: @screen-lg) {
+  h1 { font-size: 3 * @scale-lg * 1rem; line-height: 3 * @leading; margin-top: 2 * @leading; }
+  h2 { font-size: 2 * @scale-lg * 1rem; line-height: 2 * @leading; margin-top: 2 * @leading; }
+  h3 { font-size: 1 * @scale-lg * 1rem; }
+  h4 { font-size: @scale-lg / 2 * 1rem; }
+  h5 { font-size: @scale-lg / 3 * 1rem; }
+  h6 { font-size: @scale-lg / 4 * 1rem; }
+}
+
+@media screen and (max-width: @screen-md) {
+  h1 { font-size: 3 * @scale-md * 1rem; line-height: 3 * @leading; margin-top: 2 * @leading; }
+  h2 { font-size: 2 * @scale-md * 1rem; line-height: 2 * @leading; margin-top: 2 * @leading; }
+  h3 { font-size: 1 * @scale-md * 1rem; }
+  h4 { font-size: @scale-md / 2 * 1rem; }
+  h5 { font-size: @scale-md / 3 * 1rem; }
+  h6 { font-size: @scale-md / 4 * 1rem; }
+}
+
+@media screen and (max-width: @screen-sm) {
+  h1 { font-size: 3 * @scale-sm * 1rem; line-height: 3 * @leading; margin-top: 2 * @leading; }
+  h2 { font-size: 2 * @scale-sm * 1rem; line-height: 2 * @leading; margin-top: 2 * @leading; }
+  h3 { font-size: 1 * @scale-sm * 1rem; }
+  h4 { font-size: @scale-sm / 2 * 1rem; }
+  h5 { font-size: @scale-sm / 3 * 1rem; }
+  h6 { font-size: @scale-sm / 4 * 1rem; }
+}
+
+@media screen and (max-width: @screen-xs) {
+  h1 { font-size: 3 * @scale-xs * 1rem; line-height: 3 * @leading; margin-top: 2 * @leading; }
+  h2 { font-size: 2 * @scale-xs * 1rem; line-height: 2 * @leading; margin-top: 2 * @leading; }
+  h3 { font-size: 1 * @scale-xs * 1rem; }
+  h4 { font-size: @scale-xs / 2 * 1rem; }
+  h5 { font-size: @scale-xs / 3 * 1rem; }
+  h6 { font-size: @scale-xs / 4 * 1rem; }
+}
+
+
 
 /* Tables */
 table {

@@ -6,6 +6,27 @@ html {
   font-size: 137.5%;
   -webkit-font-smoothing: antialiased;
 }
+/* GLOBAL HTML MEDIA QUERY SIZES */
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 137.5%;
+  }
+}
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 112.5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 62.5%;
+  }
+}
 /* Copy & Lists */
 p {
   line-height: 1.5rem;
@@ -46,6 +67,7 @@ h6 {
   margin-bottom: 0;
   line-height: 1.5rem;
 }
+/* GLOBAL HTML MEDIA QUERY SIZES */
 h1 {
   font-size: 4.242rem;
   line-height: 4.5rem;
@@ -67,6 +89,102 @@ h5 {
 }
 h6 {
   font-size: 0.3535rem;
+}
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 6.042rem;
+    line-height: 4.5rem;
+    margin-top: 3rem;
+  }
+  h2 {
+    font-size: 4.028rem;
+    line-height: 3rem;
+    margin-top: 3rem;
+  }
+  h3 {
+    font-size: 2.014rem;
+  }
+  h4 {
+    font-size: 1.007rem;
+  }
+  h5 {
+    font-size: 0.6713333333333332rem;
+  }
+  h6 {
+    font-size: 0.5035rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 5.442rem;
+    line-height: 4.5rem;
+    margin-top: 3rem;
+  }
+  h2 {
+    font-size: 3.628rem;
+    line-height: 3rem;
+    margin-top: 3rem;
+  }
+  h3 {
+    font-size: 1.814rem;
+  }
+  h4 {
+    font-size: 0.907rem;
+  }
+  h5 {
+    font-size: 0.6046666666666667rem;
+  }
+  h6 {
+    font-size: 0.4535rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 4.8420000000000005rem;
+    line-height: 4.5rem;
+    margin-top: 3rem;
+  }
+  h2 {
+    font-size: 3.228rem;
+    line-height: 3rem;
+    margin-top: 3rem;
+  }
+  h3 {
+    font-size: 1.614rem;
+  }
+  h4 {
+    font-size: 0.807rem;
+  }
+  h5 {
+    font-size: 0.538rem;
+  }
+  h6 {
+    font-size: 0.4035rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 4.242rem;
+    line-height: 4.5rem;
+    margin-top: 3rem;
+  }
+  h2 {
+    font-size: 2.828rem;
+    line-height: 3rem;
+    margin-top: 3rem;
+  }
+  h3 {
+    font-size: 1.414rem;
+  }
+  h4 {
+    font-size: 0.707rem;
+  }
+  h5 {
+    font-size: 0.4713333333333333rem;
+  }
+  h6 {
+    font-size: 0.3535rem;
+  }
 }
 /* Tables */
 table {
