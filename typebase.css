@@ -69,26 +69,26 @@ h6 {
 }
 /* GLOBAL HTML MEDIA QUERY SIZES */
 h1 {
-  font-size: 4.242rem;
+  font-size: 6.042rem;
   line-height: 4.5rem;
   margin-top: 3rem;
 }
 h2 {
-  font-size: 2.828rem;
+  font-size: 4.028rem;
   line-height: 3rem;
   margin-top: 3rem;
 }
 h3 {
-  font-size: 1.414rem;
+  font-size: 2.014rem;
 }
 h4 {
-  font-size: 0.707rem;
+  font-size: 1.007rem;
 }
 h5 {
-  font-size: 0.4713333333333333rem;
+  font-size: 0.6713333333333332rem;
 }
 h6 {
-  font-size: 0.3535rem;
+  font-size: 0.5035rem;
 }
 @media screen and (max-width: 1200px) {
   h1 {
@@ -203,7 +203,7 @@ code {
 }
 /* Leading paragraph text */
 .lead {
-  font-size: 1.414rem;
+  font-size: 2.014rem;
 }
 /* Hug a the block above you */
 .hug {
